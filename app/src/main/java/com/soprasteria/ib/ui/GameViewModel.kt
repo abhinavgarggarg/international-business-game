@@ -39,7 +39,9 @@ class GameViewModel(
     playerNames: List<String> = listOf("Player 1", "Player 2")
 ) : ViewModel() {
 
-    private val (board, properties) = BoardFactory.buildBoard()
+    private val boardAndProperties = BoardFactory.buildBoard()
+    private val board = boardAndProperties.first
+    private val properties = boardAndProperties.second
     private val players = playerNames.mapIndexed { i, name -> Player(id = i + 1, name = name) }.toMutableList()
     private val engine = GameEngine(board, properties, players)
 
