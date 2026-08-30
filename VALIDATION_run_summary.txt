@@ -1,0 +1,15 @@
+Test: dice roll stays within 2..12 and both dice within 1..6
+Test: board looping / passing Start awards money exactly once per lap
+Test: rent calc ? base, monopoly doubling, houses, hotel
+Test: bankruptcy trigger, property release, and win condition
+Test: buying a property deducts cash and assigns ownership
+Results: 1519 passed, 0 failed
+Simulation finished after 5000 turns.
+Winner: null
+Alice: balance=460284, bankrupt=false, position=23, properties=9
+Bob: balance=388996, bankrupt=false, position=8, properties=7
+Carol: balance=575070, bankrupt=false, position=32, properties=10
+Bank balance: 1276650
+Sim completed without exceptions.
+
+(full per-assertion log available on request — this is the section summary + full-game simulation output)
